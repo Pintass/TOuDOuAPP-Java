@@ -50,6 +50,7 @@ public class ToDoList {
      * @return
      */
     public ArrayList<String> getTaskInfo(String taskName){
+        if (!chSetTodo.containsKey(taskName)) return null;
         return chSetTodo.get(taskName);
     }
 
@@ -67,6 +68,8 @@ public class ToDoList {
         return false;
     }
 
-
-
+    @Override
+    public String toString() {
+        return "Votre todolist " + chTitleList + " contient les tâches suivantes : " + this.getTitleTasks();
+    }
 }
