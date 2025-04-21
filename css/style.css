@@ -4,3 +4,13 @@
     -fx-background-size: cover;
     -fx-background-radius: 20px;
 }
+
+.thanksText {
+    -fx-text-alignment: center;
+    -fx-font-family: Montserrat;
+    -fx-font-size: 32px;
+    -fx-text-fill: white;
+    -fx-font-weight: 800;
+    -fx-label-padding: 80px;
+    -fx-effect: dropshadow( gaussian , hotpink, 3, 0.4,0,0 );
+}
