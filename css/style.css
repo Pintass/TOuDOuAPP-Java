@@ -1,0 +1,6 @@
+.root {
+    -fx-background-image: url("img/background.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-background-radius: 20px;
+}

@@ -7,4 +7,5 @@ module java_toudouapp {
 
     opens com.example.java_toudouapp to javafx.fxml;
     exports modele;
+    exports vue;
 }
