@@ -11,6 +11,15 @@
     -fx-font-size: 32px;
     -fx-text-fill: white;
     -fx-font-weight: 800;
+    -fx-effect: dropshadow( gaussian , hotpink, 3, 0.5,0,0 );
+}
+
+.startoudouText {
+    -fx-text-alignment: center;
+    -fx-font-family: Montserrat;
+    -fx-font-size: 20px;
+    -fx-text-fill: white;
+    -fx-font-weight: 800;
     -fx-label-padding: 80px;
-    -fx-effect: dropshadow( gaussian , hotpink, 3, 0.4,0,0 );
+    -fx-effect: dropshadow( gaussian , hotpink, 2, 0.5,0,0 );
 }
