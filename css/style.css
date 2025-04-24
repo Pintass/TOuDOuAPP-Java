@@ -11,7 +11,6 @@
     -fx-font-size: 32px;
     -fx-text-fill: white;
     -fx-font-weight: 800;
-    -fx-effect: dropshadow( gaussian , hotpink, 3, 0.5,0,0 );
 }
 
 .startoudouText {
@@ -20,6 +19,33 @@
     -fx-font-size: 20px;
     -fx-text-fill: white;
     -fx-font-weight: 800;
-    -fx-label-padding: 80px;
-    -fx-effect: dropshadow( gaussian , hotpink, 2, 0.5,0,0 );
+}
+
+.creditsText {
+    -fx-text-alignment: center;
+    -fx-font-family: Montserrat;
+    -fx-font-size: 14px;
+    -fx-text-fill: white;
+    -fx-font-weight: 200;
+    -fx-opacity: 50%;
+
+}
+
+.nextButton {
+    -fx-text-alignment: center;
+    -fx-font-family: Montserrat;
+    -fx-font-size: 20px;
+    -fx-text-fill: white;
+    -fx-font-weight: 800;
+    -fx-background-radius: 10px;
+    -fx-background-color: #300031;
+    -fx-effect: dropshadow( gaussian , #D400FF, 20, 0.01,0,0 );
+    -fx-transition: transform 0.3s;
+}
+
+.nextButton:hover {
+    -fx-effect: dropshadow( gaussian , pink, 20, 0.01,0,0 );
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+    -fx-background-color: #3e003f;
 }
