@@ -49,3 +49,19 @@
     -fx-scale-y: 1.1;
     -fx-background-color: #3e003f;
 }
+
+.title {
+    -fx-font: Montserrat;
+    -fx-font-size: 32px;
+    -fx-text-fill: white;
+    -fx-text-alignment: center;
+    -fx-font-weight: 800;
+}
+
+.titlefield {
+    -fx-text-alignment: center;
+    -fx-font-family: Montserrat;
+    -fx-font-size: 20px;
+    -fx-text-fill: white;
+    -fx-font-weight: 800;
+}

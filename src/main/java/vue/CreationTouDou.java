@@ -21,13 +21,30 @@ public class CreationTouDou extends Pane {
         stage.setTitle("TOuDoU-APP");
         stage.setResizable(false);
 
-        Label titleText = new Label("Commençons par créer votre TOuDOuList");
-        titleText.getStyleClass().add("startoudouText");
-        titleText.setLayoutX(339);
-        titleText.setLayoutY(56);
+        Pane textPane = new Pane();
+        Label titleText = new Label("Création d’une TOuDOuList");
+        titleText.getStyleClass().add("title");
+        titleText.setLayoutX(393);
+        titleText.setLayoutY(35);
+        textPane.getChildren().addAll(titleText);
+
+        Label creditsText = new Label("Application imaginée et créée par : Pintass. / Daniel");
+        creditsText.getStyleClass().add("creditsText");
+        creditsText.setLayoutX(442);
+        creditsText.setLayoutY(643);
+        textPane.getChildren().addAll(creditsText);
+
+        // PARTIE formulaire maybe gridpane ? ou une grille afin de les placer au mieux
 
 
-        v.getChildren().addAll(titleText);
+
+
+
+
+
+
+
+        v.getChildren().addAll(textPane);
 
     }
 
