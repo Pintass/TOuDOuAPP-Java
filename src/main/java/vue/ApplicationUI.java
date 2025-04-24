@@ -55,17 +55,21 @@ public class ApplicationUI extends Application {
         startoudouText.setLayoutY(120);
         startBox.getChildren().addAll(startoudouText);
 
-        Button nextButton = new Button("Créer une TOuDOuList");
-        nextButton.getStyleClass().add("nextButton");
-        nextButton.setLayoutX(482);
-        nextButton.setLayoutY(170);
-        startBox.getChildren().addAll(nextButton);
-
         Label creditsText = new Label("Application imaginée et créée par : Pintass. / Daniel");
         creditsText.getStyleClass().add("creditsText");
         creditsText.setLayoutX(442);
         creditsText.setLayoutY(438);
         startBox.getChildren().addAll(creditsText);
+
+        Button nextButton = new Button("Créer une TOuDOuList");
+        nextButton.getStyleClass().add("nextButton");
+        nextButton.setLayoutX(482);
+        nextButton.setLayoutY(170);
+        startBox.getChildren().addAll(nextButton);
+        // ouverture scène de création d'une TouDou<
+        nextButton.setOnAction(e -> {
+            CreationTouDou s = new CreationTouDou(stage);
+        });
 
         root.getChildren().addAll(thanksTextPane);
         root.getChildren().addAll(logoPicPane);
