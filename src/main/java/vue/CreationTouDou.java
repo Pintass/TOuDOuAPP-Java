@@ -1,16 +1,15 @@
 package vue;
 
+import javafx.geometry.HPos;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
-import javafx.scene.control.ComboBox;
+
 import java.io.File;
 
 public class CreationTouDou extends Pane {
@@ -56,25 +55,14 @@ public class CreationTouDou extends Pane {
         Label descListTitle = new Label("DESCRIPTION DE LA TOUDOULIST");
         descListTitle.getStyleClass().add("titlefield");
         TextField descListField = new TextField();
+        descListField.setPrefWidth(400);
+        descListField.setPrefHeight(50);
 
-        Button toudouPoint = new Button("TOUDOUPOINT");
-        toudouPoint.getStyleClass().add("nextButton");
-        Label descToudouPoint = new Label("AJOUTEZ DES TOUDOUPOINTS DANS VOTRE TOUDOULIST");
-        descToudouPoint.getStyleClass().add("titlefield");
+        Button confirmButton = new Button("CONFIRMER");
+        confirmButton.getStyleClass().add("nextButton");
 
-        Label namePointTitle = new Label("NOM DU TOUDOUPOINT");
-        namePointTitle.getStyleClass().add("titlefield");
-        TextField namePointField = new TextField();
-        Label descPointTitle = new Label("DESCRIPTION DU TOUDOUPOINT");
-        descPointTitle.getStyleClass().add("titlefield");
-        TextField descPointField = new TextField();
-        Label priorityTitle = new Label("NIVEAU DE PRIORITÉ");
-        priorityTitle.getStyleClass().add("titlefield");
-        ComboBox<String> priorityList = new ComboBox<>();
-        priorityList.getItems().addAll("Urgent", "Haut", "Moyen", "Bas");
-        priorityList.setValue("Moyen");
-
-
+        GridPane.setColumnSpan(confirmButton, 2);
+        GridPane.setHalignment(confirmButton, HPos.CENTER);
 
         grid.add(nameListTitle, 0, 0);
         grid.add(nameListField, 1, 0);
@@ -82,21 +70,10 @@ public class CreationTouDou extends Pane {
         grid.add(descListTitle, 0, 1);
         grid.add(descListField, 1, 1);
 
-        grid.add(toudouPoint, 0, 2);
-        grid.add(descToudouPoint, 1, 2);
-
-        grid.add(namePointTitle, 0, 3);
-        grid.add(namePointField, 1, 3);
-
-        grid.add(descPointTitle, 0, 4);
-        grid.add(descPointField, 1, 4);
-
-        grid.add(priorityTitle, 0, 5);
-        grid.add(priorityList, 1, 5);
-
+        grid.add(confirmButton, 0, 2);
 
         grid.setLayoutX(235);
-        grid.setLayoutY(170);
+        grid.setLayoutY(223);
         textPane.getChildren().addAll(grid);
 
         v.getChildren().addAll(textPane);

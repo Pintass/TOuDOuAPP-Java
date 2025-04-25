@@ -81,6 +81,21 @@ TextField:focused {
     -fx-background-color: #3e003f;
 }
 
+TextField {
+    -fx-text-alignment: center;
+    -fx-font-family: Montserrat;
+    -fx-font-size: 15px;
+    -fx-text-fill: white;
+    -fx-background-radius: 10px;
+    -fx-background-color: #300031;
+    -fx-effect: dropshadow( gaussian , #D400FF, 20, 0.01,0,0 );
+}
+
+TextField:focused {
+    -fx-effect: dropshadow( gaussian , pink, 20, 0.01,0,0 );
+    -fx-background-color: #3e003f;
+}
+
 ComboBox {
     -fx-text-alignment: center;
     -fx-font-family: Montserrat;
