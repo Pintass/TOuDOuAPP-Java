@@ -111,3 +111,23 @@ ComboBox:focused {
     -fx-effect: dropshadow( gaussian , pink, 20, 0.01,0,0 );
     -fx-background-color: #3e003f;
 }
+
+.scroll {
+    -fx-background-color: transparent; /* rend la bordure externe transparente */
+}
+
+.scroll .viewport {
+    -fx-background-color: #480049; /* couleur du fond visible */
+    -fx-background-radius: 10px;
+}
+
+.scroll .content {
+    -fx-background-color: #480049; /* couleur du contenu si nécessaire */
+    -fx-background-radius: 10px;
+}
+
+.scroll-pane {
+    -fx-background-insets: 0;
+    -fx-padding: 10px;
+    -fx-effect: dropshadow(gaussian, #D400FF, 6, 0.2, 0, 0);
+}

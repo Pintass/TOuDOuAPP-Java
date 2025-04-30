@@ -1,5 +1,7 @@
 package vue;
 
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.geometry.HPos;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
@@ -23,7 +25,7 @@ public class CreationTouDou extends Pane {
         File css = new File("css" + File.separator+"style.css");
         scene.getStylesheets().add(css.toURI().toString());
         stage.setScene(scene);
-        stage.setTitle("TOuDoU-APP");
+        stage.setTitle("TOuDoU-APP !");
         stage.setResizable(false);
 
         Pane textPane = new Pane();
@@ -60,6 +62,9 @@ public class CreationTouDou extends Pane {
 
         Button confirmButton = new Button("CONFIRMER");
         confirmButton.getStyleClass().add("nextButton");
+        confirmButton.setOnAction(e -> {
+            MenuPrincipal s = new MenuPrincipal(stage);
+        });
 
         GridPane.setColumnSpan(confirmButton, 2);
         GridPane.setHalignment(confirmButton, HPos.CENTER);

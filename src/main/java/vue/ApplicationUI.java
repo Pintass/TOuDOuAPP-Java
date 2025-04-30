@@ -29,7 +29,7 @@ public class ApplicationUI extends Application {
         Scene scene = new Scene(root, stageX, stageY);
         scene.getStylesheets().add(css.toURI().toString());
         stage.setScene(scene);
-        stage.setTitle("TOuDoU-APP");
+        stage.setTitle("TOuDoU-APP !");
         stage.setResizable(false);
 
         // Page d'accueil
